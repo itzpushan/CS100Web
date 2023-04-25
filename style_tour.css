@@ -6,14 +6,14 @@
 
 .container{
     max-width: 100%;
-    background-color:aquamarine;
+    background-color:aqua;
     padding: 34px;
     margin: auto;
 }
 
-.container header{
+.container h1{
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 input, select{
@@ -36,4 +36,8 @@ button{
     margin: 7px;
     padding: 4px;
     cursor: pointer;
+}
+
+pre{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
