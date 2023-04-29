@@ -4,11 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_login.css">
+<style>
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 35%;
+    background-color:blanchedalmond;
+    padding: 34px;
+    margin: auto;
+    border: 2px solid burlywood;
+    border-radius: 10px;
+}
+
+.container header{
+    text-align: center;
+    font-size: 30px;
+}
+
+input, select{
+    border: 2px solid rgb(8, 8, 8);
+    border-radius: 6px;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    margin: 7px;
+    padding: 5px;
+}
+
+button{
+    border: 2px solid rgb(7, 178, 246);
+    color: rgb(21, 20, 91);
+    background: rgb(0, 255, 85);
+    border-radius: 3px;
+    font-size: 13px;
+    width: 12%;
+    margin: 7px;
+    padding: 4px;
+    cursor: pointer;
+}
+.bg{
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+}
+</style>
     <title>Login here</title>
 </head>
 <body>
-	<div class="container">
+	<img class="bg" src="chhattisgarh.jpg" alt="Chhattisgarh">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="container">
     	<header><b>Fill up the following form for login</b></header>
     	<form action="login.php" method="post">
 
@@ -29,4 +77,3 @@
     </div>
 </body>
 </html>
-

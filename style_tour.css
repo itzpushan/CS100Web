@@ -5,10 +5,12 @@
 }
 
 .container{
-    max-width: 100%;
+    max-width: 40%;
     background-color:aqua;
     padding: 34px;
     margin: auto;
+    border: 2px solid rgb(16, 19, 197);
+    border-radius: 12px;
 }
 
 .container h1{
@@ -36,6 +38,12 @@ button{
     margin: 7px;
     padding: 4px;
     cursor: pointer;
+}
+
+.bg{
+	width: 100%;
+	position: absolute;
+	z-index: -1;
 }
 
 pre{
