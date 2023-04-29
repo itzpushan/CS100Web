@@ -25,7 +25,7 @@ while(!feof($file))
         }
         else
         {
-        	$d=$name." ".$sname." ".$uname." ".$email." ".$pass." ".$gndr." "."\n";
+        	$d= $name." ".$sname." ".$uname." ".$email." ".$pass." ".$gndr." "."\n";
 		fwrite($file,$d);
 		fclose($file);
         	echo "Your registration is successful";
