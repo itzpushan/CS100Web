@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            background-color:gold;
+            max-width: 50%;
+            max-height: fit-content;
+            padding: 34px;
+            margin: auto;
+            border: 2px solid rgb(197, 236, 6);
+            border-radius: 15px;
+        }
+        input, select{
+            border: 2px solid rgb(8, 8, 8);
+            border-radius: 8px;
+            outline: none;
+            font-size: 16px;
+            width: 50%;
+            margin: 7px;
+            padding: 5px;
+        }
+        button{
+            border: 2px solid gold;
+            color: rgb(21, 20, 91);
+            background: rgb(0, 255, 85);
+            border-radius: 7px;
+            font-size: 15px;
+            width: 15%;
+            margin: 7px;
+            padding: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <title>Feedback form</title>
+</head>
+<body>
+    <div class="container">
+        <h2><b>Please provide your valuable feedback about the place you visited<br><br></b></h2>
+        <main>
+            <form action="feedback.php" method="post">
+                <input type="text" name="usrn" id="username" placeholder="Enter your usernname" required><br><br>
+                <input type="password" name="pass" id="password" placeholder="Enter password" required><br>
+                Select the place you visited<br>
+                <select name="place" id="000">
+                    <option value="a1">Barnawapara Wildlife Sanctuary</Option>
+                    <option value="a2">Chitrakote Waterfall</Option>
+                    <option value="a3">Kanger Valley National Park</Option>
+                    <option value="a4">Madku Dweep</Option>
+                </select>
+                <br><br>
+                How much out of 5 stars would you give to the the visiting place for your experience<br>
+                <label for="1">
+                    1 Star<input type="radio" value="one" name="rating" id="1">
+                </label> <br>
+                <label for="2">
+                    2 Star<input type="radio" value="two" name="rating" id="2">
+                </label> <br>
+                <label for="3">
+                    3 Star<input type="radio" value="three" name="rating" id="3">
+                </label> <br>
+                <label for="4">
+                    4 Star<input type="radio" value="four" name="rating" id="4">
+                </label> <br>
+                <label for="5">
+                    5 Star<input type="radio" value="five" name="rating" id="5">
+                </label> <br>
+
+                <button class="btn" type="submit" value="submit">Submit</button>
+                <button class="btn" type="reset" value="reset">Reset</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
