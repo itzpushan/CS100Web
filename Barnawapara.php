@@ -248,7 +248,15 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 </script>
-
+<hr>
+<?php
+	$file=fopen("Breview.txt","r");
+	$line=fgets($file);
+        $y=explode(" ",$line);
+        echo"This destination has recieved $y[1] reviews and its overall rating is $y[0] stars."
+?>
+<hr>
+<br>
 <footer>
    <ul>
    <li><a href="feedback.html">Rate this Destination</a></li>

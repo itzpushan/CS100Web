@@ -245,6 +245,17 @@ function showSlides() {
 </script>	
  <br>
 <br>
+
+<hr>
+<?php
+	$file=fopen("Kreview.txt","r");
+	$line=fgets($file);
+        $y=explode(" ",$line);
+        echo"This destination has recieved $y[1] reviews and its overall rating is $y[0] stars."
+?>
+<hr>
+<br>
+
 <footer>
    <ul>
    <li><a href="feedback.html">Rate this Destination</a></li>
