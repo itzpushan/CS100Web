@@ -16,20 +16,22 @@ while(!feof($file))
         if($y[2]==$uname)
         {
         	echo "username already taken";
-        	break;
+        	exit (1);
         }
         else if($y[3]==$email)
         {
         	echo "This email has been already registered";
-        	break;
+        	exit (1);
         }
         else
         {
-        	$d= $name." ".$sname." ".$uname." ".$email." ".$pass." ".$gndr." "."\n";
-		fwrite($file,$d);
-		fclose($file);
-        	echo "Your registration is successful";
+        	continue;
         }
 }
+
+$d= $name." ".$sname." ".$uname." ".$email." ".$pass." ".$gndr." "."\n";
+fwrite($file,$d);
+fclose($file);
+header('Location: homepage.html');
 
 ?>

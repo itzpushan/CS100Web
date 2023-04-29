@@ -13,7 +13,7 @@
         	$y=explode(" ",$line);
         	if($y[2]==$uname && $y[4]==$pass)
         	{	
-        		echo"Login successfull";
+        		header('Location: homepage.html');
         		exit(1);
         	}
         	else
