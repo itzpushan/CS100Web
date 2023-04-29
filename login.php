@@ -14,14 +14,15 @@
         	if($y[2]==$uname && $y[4]==$pass)
         	{	
         		echo"Login successfull";
-        		break;
+        		exit(1);
         	}
         	else
         	{
-        		echo"Login failed. Check you username & password";
-        		break;
+        		continue;
         	}
+        	
 	}
+	echo "Login Failed! Invalid Credentials" 
 ?>
 
 </html>
